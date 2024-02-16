@@ -36,10 +36,10 @@ export default function Blog() {
       
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          From the blog
+          Latest News From Blog
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-300">
-          Learn how to grow your business with our expert advice.
+          See What People Are Sharing Their Thoughts
         </p>
       </div>
       <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
