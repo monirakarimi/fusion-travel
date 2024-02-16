@@ -3,9 +3,9 @@ import Link from "next/link"
 
 const navigation = {
   About: [
-    { name: 'About Us', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Blog', href: '#' },
+    { name: 'About Us', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Blog', href: '#blog' },
   ],
   Address: [
     { name: '4433 Heavner Court' },
@@ -82,7 +82,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer aria-labelledby="footer-heading">
+    <footer id="contact" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -109,9 +109,9 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.About.map((item) => (
                     <li key={item.name}>
-                      <p className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
                         {item.name}
-                      </p>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -147,7 +147,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+          <p className="text-xs leading-5 text-gray-400">&copy; Bulid with 🤍 by Monira Karimi</p>
         </div>
       </div>
     </footer>
