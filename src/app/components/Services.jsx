@@ -35,9 +35,9 @@ const img = [
   },
 ]
 
-export default function Blog() {
+export default function Services() {
   return (
-    <div className="px-6 lg:px-8">
+    <div id="services" className="px-6 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Find Your Destination
