@@ -38,7 +38,6 @@ const img = [
 export default function Blog() {
   return (
     <div className="px-6 lg:px-8">
-      
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Find Your Destination
@@ -56,27 +55,18 @@ export default function Blog() {
         >
        
           {img.map((i) => (
-            <SwiperSlide key={i.id} className="flex flex-col items-start justify-between">
-            {/* <article key={i.id} className="flex flex-col items-start justify-between"> */}
-              
+            <SwiperSlide key={i.id} className="flex flex-col items-start justify-between">   
               <div className="relative w-full">
-                
-                  <Image
-                    src={i.imageUrl}
-                    alt=""
-                    className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
-                  />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                
+                <Image
+                   src={i.imageUrl}
+                  alt=""
+                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                />
+                <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              
-            {/* </article> */}
             </SwiperSlide>
           ))}
-          
-        
-      {/* </div>   */}
-      </Swiper> 
+        </Swiper> 
     </div>
   )
 }
